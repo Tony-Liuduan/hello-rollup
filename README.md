@@ -7,7 +7,7 @@
 ### 共同点
 
 * 将多个 js 文件打包成 1 个 js 文件
-* Tree-shaking (webpack2.0 rollup)
+* Tree-shaking (webpack2.0 / rollup)
 
 ### 区别
 
@@ -21,7 +21,8 @@
 ## rollup 优缺点
 
 1. 缺点: 基于 esmodule (import export), 它通过插件处理大多数 CommonJS 文件的时候，一些代码将无法被翻译为 ES2015
-2. 优点: 无多余的模块加载函数, 都在 1 个文件中
+2. 缺点: rollup 配置多入口文件, 需要读取文件 for 循环遍历入口文件配置 ??
+3. 优点: 无多余的模块加载函数, 都在 1 个文件中
 
 ## rollup 配置参数
 
